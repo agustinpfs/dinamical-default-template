@@ -1,0 +1,134 @@
+.supportModule 
+    .userImg
+        height 30px
+        width 30px
+        margin-right .5rem
+        vertical-align middle
+        padding 1px
+        background #a4bdcd
+        border-radius 50%
+        opacity .8
+    
+    .info 
+        position relative
+        padding 12px
+        width 75%
+        color #449644
+        // border-top 1px solid #e0e0e0
+        border-bottom 1px solid #e0e0e0
+
+        img
+            margin-right 8px
+            border-radius 100%
+            vertical-align middle
+            width 40px
+
+    #messages,
+    #users,
+    #rooms,
+    #serverLog 
+        overflow auto
+        font-size 1rem
+        color gray
+
+    #messages 
+        position absolute
+        width 75%
+        height 80%
+        padding .5rem 1rem
+        color grey
+    
+    #chatInput 
+        position absolute    
+        color silver
+        border-top 1px solid #e0e0e0
+        font-size 1rem
+        padding 1rem
+        width 75%
+        height 20%
+        bottom 0
+        color grey
+        // background #FDFDFD
+
+    #users 
+        position absolute
+        top 0
+        width 25%
+        height 100% 
+        right 0
+        text-transform lowercase
+        border-left 1px solid #e0e0e0
+        // border-bottom 1px solid #e0e0e0
+
+    #rooms 
+        position absolute
+        top 50%
+        right 0
+        width 25%
+        height 50%
+        text-transform lowercase
+        border-left 1px solid #e0e0e0
+
+    & #users a, & #rooms a
+        display block
+        color #666
+        overflow hidden
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+        width 100%
+        padding .5rem
+    
+    & #users ul li, & #rooms ul li
+        border-bottom 1px solid #e0e0e0
+
+    .yo
+        background #FDFDFD
+
+    // .yo:before  
+    //     content "[ " 
+
+    // .yo:after  
+    //     content " ]" 
+
+    // #status 
+    //     color green
+
+    // .self
+    //     justify-content flex-end
+    //     align-items flex-end
+        
+    .connected 
+        color green
+
+    .disconnected 
+        color red
+    
+    .selected 
+        -webkit-animation pulsate 1s ease-out
+        animation pulsate 1s ease-out
+        -webkit-animation-iteration-count infinite
+        -webkit-animation-iteration-count infinite  
+        opacity 0.0
+
+@-webkit-keyframes pulsate 
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% { opacity: 0.5; color:green;}
+
+// @media only screen and (max-width: 600px)
+//     .supportModule #users a
+//         display none
+
+.support-button
+    color #fff
+    width 240px
+    background #83b0ce
+    margin 135px auto
+    padding 2rem
+    text-align center
+    cursor pointer
+    a
+        color #F8F8F8
+        &:hover
+            color #fff

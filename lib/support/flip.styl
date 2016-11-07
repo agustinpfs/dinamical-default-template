@@ -1,0 +1,26 @@
+.flip
+    perspective 800
+    position relative
+
+    .card 
+        width 100%
+        height 100%
+        transform-style preserve-3d
+        transition 0.5s
+
+        .front, .back
+            width 100%
+            height 380px
+            backface-visibility hidden
+            z-index 2
+
+        .front 
+            position absolute
+            background #fff
+            z-index 1
+
+        .back
+            transform rotatex(-180deg)
+
+        &.flipped 
+            transform rotatex(-180deg)

@@ -1,0 +1,14 @@
+.b-lazy
+    transition opacity 500ms ease-in-out
+    max-width 100%
+    opacity 0
+    transition all 0.5s ease
+    transform scale(.5)
+
+.b-lazy.b-loaded
+    opacity .7
+    transform scale(1)
+
+.b-lazy.b-error
+    opacity .7
+    transform scale(1)

@@ -1,0 +1,147 @@
+.centrado
+    position absolute
+    top 30% 
+    left 50%
+    transform translate(-50%, -50%)
+.login 
+    // display none
+    width 240px
+    // height 40px
+    perspective 800px
+    color silver
+    input:focus 
+        outline none
+    a 
+        text-decoration none
+        font-size 1rem
+        &:hover 
+            color #337ab7
+.socialLogin
+    text-align center
+    // a
+    //     font-size .8em
+.container 
+    height 40px
+    perspective 800px
+    cursor pointer
+    
+.inner 
+    position relative
+    transform-style preserve-3d
+    transition all .5s
+.cube
+    padding .5rem
+    width 100%
+    font-size 1rem
+    text-align center
+    color #fff
+    position absolute
+    background #4d7b94
+    backface-visibility hidden
+    border-radius 0px 31px 0px 31px
+    user-select none
+    &:hover 
+        transition all .5s
+        background #3B5A6B
+    
+.rect 
+    position absolute
+    backface-visibility hidden
+// .social 
+//     top 40px
+//     transform  rotateY( 0deg ) translateZ( 20px ) 
+//     background #5B6889
+.front, .back, .top, .bottom, .left, .right
+    width 240px
+
+.front 
+    transform  rotateY( 0deg ) translateZ( 20px ) 
+    background rgb(237, 237, 237)
+.back 
+    height 100%
+    transform  rotateX( -180deg ) translateZ( 20px )
+.top 
+    transform  rotateX( 90deg ) translateZ( 20px )
+    // background #95d44f 
+    color #4D7B94
+.bottom 
+    transform  rotateX( -90deg ) translateZ( 20px )
+    background #c45050
+.left 
+    transform  rotateY( 90deg ) translateZ( 20px )
+.right 
+    transform  rotateY( -90deg ) translateZ( 250px )
+
+.username,.password
+    display block
+    border-radius 0 10px
+    margin .5rem 0
+    padding 1rem
+    font-size 1rem
+    width  240px
+    text-decoration none
+    color silver
+
+// .email 
+//     font-size 1rem
+//     width 240px
+//     height 40px
+//     color silver
+//     margin .5rem 0
+//     padding-left .5em
+    
+.icon position absolute
+    width 30px
+    left 5px
+    top 5px
+    color gray
+    line-height 40px
+
+.sign,.message 
+    height 100%
+    text-align center
+    line-height 40px  
+.err
+    padding .5rem 0
+    text-align center
+    vertical-align middle
+    color #fff
+    top 0
+
+.socialLogin, .login-buttons
+    width 100%
+    margin 1rem 0
+    a
+        padding 0 5px
+.login-buttons
+    text-align center
+    position: absolute;
+
+.loginStatus
+    // height 2rem
+    height 60px
+    img 
+        right 0
+        width 35px
+        border-radius 50%
+
+// @media screen and (max-width: 480px)
+//     .front, .login, .social, .back, .top
+//         width 340px
+//     .password, .username
+//         width 148px
+//     .login-buttons a, .socialLogin a
+//         padding 0px 0.4rem
+
+// @media screen and (max-width: 320px)
+//     .front, .login, .social, .back, .top
+//         width 300px
+//     .password, .username
+//         width 128px
+//     .login-buttons a, .socialLogin a
+//         padding 0px 0.2rem  
+
+
+@media screen and (max-width: 320px)
+    .centrado
+        top 18% 

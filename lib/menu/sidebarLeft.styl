@@ -1,0 +1,150 @@
+@import './switch.styl'
+
+.menu-left
+    height 100%
+    overflow hidden
+    overflow-y scroll
+    -webkit-overflow-scrolling touch
+    padding-bottom 5em
+    // margin 0 .5rem
+    
+.show-nav-left
+    .main-container
+        transform translateX(280px)
+        transform translate3d(280px, 0, 0) 
+    .main-container > .Layout
+        transition all 0.3s ease
+        width calc(100% - 280px)    
+
+.Sidebar-left
+    position absolute
+    width 280px
+    height 100%
+    // padding 0 .5em
+    left -280px
+    background-color #242E38
+    z-index 1
+
+img.alineadoTextoImagenCentro
+    vertical-align middle
+    margin: 0 .5em
+
+.mainlogo
+    padding 1rem
+    height 60px
+    border-bottom 1px solid rgba(69, 85, 102, 0.41)
+
+.area-top
+    // transition: all 0.3s ease;
+    position fixed
+    background #CFD8DC
+    color rgba(0,0,0,0.4)
+    width 100% 
+    height 25px
+    clear none
+    top 0
+    left 0
+    
+.userImage
+    position absolute
+    // background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAERklEQVR4nOWbTWhcVRTHb1IJVoxGtNCNdal2JYJReC6GWuO83PM/59yUS3FRFARdFlwYP1CfiojQWt36sRCUurRIdVFXIn41lAoVdRGrG1M01YpKrWjiYmaSl8ybZJL3cd+YA//NLObd3++eO8x79z5jSq5Gw+8kov0AP8vMR5l1BtBZQM4B8ks75wCdZdYZZj5qLZ4hov2Nht9Z9vhKKSIaB/gI4M4w62KeAO6Mte4lYOq20FxrlqqOibhHmeWbvNC9ZfDX1mLae391aN6limO/gwgvAPJbWeAZuSDingdwXTBw7/0IsyaA/Fkh+KqOkD+YNfHej1QKD+y7iVlOhgLvFqFfNJvNGyuBJ+KDAF8MDd0tgS8y64OlgSdJMsysL4cG7SOHkyQZLhTee7+d2R2rAVy/S+Jd7/32ouBHAP4gNNRGQyTHc/84NhqNywZp5rvjjnnvt21aABFeCQ+RLwAf2hQ8s7sv9OCLk6AHNgQvIrvbfzKCD76g/O6cu7lf/iER/aQGgy448pExZmhdegAPhR9sObFWH1gT3lp7DaA/5bkIgJhZPgsNmz02novj+KqeApj1ubwXWe4kdyeznAgNvTpE/HQmvKqOMeuFogTUVQSRno+iaLRLAJF7uIgL9O4ubgL8aWgB7S44mNX+35YpICUiAvS9sBLkq1WzT+NFffl6AuoiApi6NT37h6sWkBIRZGkQ8YtLgyji6e1mBYTqCEBPG2Naz+0BWQgtoGoRgCzEsd9hAN1X5BfnFZASUfrSAFQNsyZ1FJASUVpHiLinDJG8U2cBZYogkrcNs5waBAGdstbeU9zdqpw0gPwwSAI6VUxHyFlDpOcHUUBBIuYNs14aZAE5RVwyzPr3/0EAEY0TyfGNjBWQvwZ +CTSbehfAH29mrID8bET0+0EUkAd8WYDOmqJ3ecsG30yr9wqRfm6Y+a1BEFDEjHfHvWmY9ck6CygHvBVr8Xhtb4ZE5HZA3y8DvBNA1TjnrmXWf+sioMwZX5V/VHXMGGMMoKdDCxCRvRWBdzKzdHEO+EisilbPyopHYqp6S9UCAsz4iojI7hUDAtyXVQgIDd6KnOoaWNkbI6FaPSuZGyMArsi7MZoloB4zviI/Nhr3X95jltwTRQmoIfgisy5ai+me67OI7fE4nrqjrqfK1t0eby0FPRB6oGVlchL3rgnfrq19RKbVBdhV9IOSwJmfmJi4vi/4ThERitwyCxVAFqydshuCX5awhQ9KtmuIWd8IDZED/nXT77rvVVv6sHRKwjYi91poqP7Dr+Y6JJ1VSZIMA3wkPNy6bX+o8Bcm0sXMdwM8Fxo0A3xORPaWBp6uPXsmbxCRD0NDL0dOANhVCXy6iAjMcjbcrMt3RITKwdMVRdFo+y5yvkL4eWZ+zHt/ZVD4dEVRNGotpst+dZZZH8k86lqn2pIvT/eqrNfn2xuyqYPZ8mv7s8pfn/8Pybm4TIjanscAAAAASUVORK5CYII=") no-repeat center center;
+    // background-size: 64px 64px;
+    height 40px
+    width 40px
+    top 10px
+    right 1rem
+    padding 1px
+    background #A4BDCD
+    border-radius 50%
+    opacity .8
+    &:hover
+        opacity 1
+    
+.option-popup {
+    position: absolute;
+    -webkit-transform: translateZ(0);
+    width: 100%;
+    height: 303px;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    transition: bottom 300ms cubic-bezier(.02,.01,.47,1);
+}
+
+.option-popup.closed {
+    bottom: -255px;
+}
+
+.option-popup .option-header {
+    cursor: pointer;
+    height: 50px;
+    background-color: #202A33;
+    color: rgb(160, 159, 158);
+    padding: 15px 14px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+// .option-popup .option-header > .fa-gear {
+//     font-size: 18px;
+//     margin-right: 10px;
+// }
+
+// .option-popup .option-header > .fa-angle-up,
+// .option-popup .option-header > .fa-angle-down {
+//     font-size: 18px;
+// }
+
+// .option-popup .option-body {
+//     height: 253px;
+//     padding: 22px 16px;
+//     background-color: #F8F8F8;
+//     color: rgb(191, 191, 190);
+//     font-size: 13px;
+// }
+
+// .option-popup .option-body > ul {
+//     padding: 0;
+// }
+
+// .option-popup > .option-body > ul > li {
+//     list-style-type: none;
+//     padding-bottom: 20px;
+// }
+
+// .option-popup .formats-list,
+// .option-popup .contribute-list {
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .option-popup .formats-list li,
+// .option-popup .contribute-list li {
+//     display: inline;
+//     margin-right: 30px;
+// }
+
+// .option-body > ul > li > label {
+//     color: rgb( 191, 191, 190 );
+//     line-height: 1.714;
+//     font-weight: normal;
+// }
+
+// .option-popup .formats-list > li > a,
+// .option-popup .contribute-list > li > a {
+//     color: rgb( 255, 255, 255 );
+//     font-weight: bold;
+//     line-height: 0.914;
+// }
+
+// @media print {
+//     .option-popup {
+//         display: none;
+//     }
+// }
+.fa.pull-right {
+    margin-left: .3em;
+}
+.pull-right {
+    float: right !important;
+}

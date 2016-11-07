@@ -1,9 +1,8 @@
 {
-  "name": "Dinamical RCMS (default template)",
+  "name": "dinamical-rcms",
   "description": "Default template for Realtime Singlepage Web Aplications",
   "author": "Esteban Fuster Pozzi <estebanrfp@gmail.com>",
   "devDependencies": {
-    "autoprefixer": "^6.3.7",
     "babel-core": "^6.17.0",
     "babel-eslint": "^6.1.0",
     "babel-plugin-syntax-async-functions": "^6.8.0",
@@ -42,5 +41,8 @@
   },
   "standard": {
     "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "jade": "^1.11.0"
   }
 }

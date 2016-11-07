@@ -1,0 +1,75 @@
+#cd-nav 
+    .base
+        position absolute
+        width 540px
+        height 380px
+        max-width 600px
+        right 0
+        bottom 0
+        background #fff
+        visibility hidden
+        overflow hidden
+        backface-visibility hidden
+        transform scale(0)
+        transform-origin 100% 100%
+        transition transform 0.3s, visibility 0s 0.3s
+        z-index 1000
+        &.is-visible 
+            visibility visible
+            transform scale(1)
+            transition transform 0.3s, visibility 0s 0s
+                  
+    .cd-nav-trigger
+        transition all 0.4s ease
+        position absolute
+        bottom 1rem
+        right 1rem
+        width 44px
+        height 44px
+        background #F8F8F8
+        z-index 2000
+        border-radius 50%
+        
+        padding 0 7px
+        font-size 1.8rem
+        color #03A9F4
+        &:hover
+            background #3498db
+            color #FFFFFF
+            // border-radius 50%
+
+    .cd-nav-trigger.menu-is-open  
+        span
+            background rgba(232, 74, 100, 0)
+            &::before
+                top 0
+                // transform rotate(45deg)
+                backface-visibility hidden
+                transform rotatey(-145deg)
+            // &::after
+            //     bottom 0
+            //     transform rotate(225deg)
+            &::before, &::after
+                transition all 0.4s ease
+                
+        .close-button-line1, .close-button-line2
+            transition all 0.4s ease
+            top 20px
+            background #51B2E9
+            width 30px
+            height 3px
+            display block
+            position absolute
+        .close-button-line1
+            transform rotate(-45deg)
+        .close-button-line2
+            transform rotate(45deg)
+                
+@media only screen and (max-width: 600px)
+    #cd-nav .base
+        width 100%
+        // height 300px
+        right 0
+        bottom 0
+        max-width none
+        box-shadow none
