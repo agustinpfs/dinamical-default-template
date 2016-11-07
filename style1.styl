@@ -1,0 +1,124 @@
+
+.mainlogo {
+    padding: 0;
+    height: 25px;
+    border-bottom: 1px solid rgb(213, 168, 22);
+}
+ul#js-menu {
+    padding: 5rem 1rem;
+}
+.Sidebar-left {
+    position: absolute;
+    width: 280px;
+    height: 100%;
+    left: -280px;
+    background-color: #b9215f;
+    z-index: 1;
+}
+
+.content-list {
+    position: absolute;
+    top: -36px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Item {
+    width: 440px;
+    /* min-width: 320px; */
+    border-radius: 6px;
+    height: 307px;
+    margin-top: 8px;
+    margin-top: .5rem;
+    margin-left: 8px;
+    margin-left: .5rem;
+    position: relative;
+    display: inline-block;
+    color: #ddd;
+    background-color: #2196F3;
+    transition: all .5s cubic-bezier(.45,1,.22,1);
+}
+
+.Item-content {
+    background: rgba(49, 49, 49, 0.79);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    padding: 3rem;
+    border-radius: 6px;
+}
+
+.Item-authorImage {
+    height: 60px;
+    width: 60px;
+    padding: 2px;
+    background: #FFC107;
+    float: right;
+    opacity: .8;
+    border-radius: 6px;
+    transition: all .5s cubic-bezier(.45,1,.22,1);
+}
+
+.header-menu {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #ededed;
+    background: rgba(237,237,237,.95);
+    z-index: 1000;
+}
+.userImage {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    right: 16px;
+    right: 1rem;
+    padding: 1px;
+    background: #d5a816;
+    border-radius: 3px;
+    /* border: #2196F3; */
+    border: 1px solid rgb(255, 205, 41);
+    opacity: 1;
+}
+.option-popup .option-header {
+    cursor: pointer;
+    height: 75px;
+    background-color: #d5a816;
+    color: #b9215f;
+    padding: 15px 14px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.menu--subitens__opened {
+    background: #313d4a;
+    background: rgba(49,61,74,.27);
+    border-left: 5px solid #d5a816;
+}
+
+.menu--subitens__opened .menu--link {
+    color: #b9215f;
+    background: #d5a816;
+}
+
+.page_navigation {
+    /* left: 0; */
+    float: right;
+    position: relative;
+    display: block;
+    /* top: calc(100% - 48px); */
+    text-align: center;
+    width: 40px;
+    height: 100%;
+    background: #313d4a;
+    background: #E91E63;
+    font-family: Material-Design-Iconic-Font;
+    z-index: 1;
+}
