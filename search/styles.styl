@@ -1,0 +1,86 @@
+.search
+    position absolute
+    top 0
+    left 0
+    width 100%
+            
+#expandable_search
+    // position relative
+    // display inline
+    input#busc
+        outline none
+        font-size 1rem
+        &[type=search]
+            appearance textfield
+            box-sizing content-box
+            background-color rgba(58, 73, 88, 0.21)
+            border solid 0px transparent
+            padding 0 1rem
+            width calc(100% - 2rem)
+            height 59px
+            border-bottom 1px solid #2A3744
+            transition all .5s
+            color transparent
+            cursor pointer
+            text-transform lowercase
+            &::search-decoration,
+            &::search-cancel-button
+                display none
+            &:hover
+                width calc(100% - 2rem)
+                cursor auto
+                background-color #313D4A
+            &:focus
+                color silver
+                cursor auto
+                background-color #2B536E
+            &::-moz-placeholder
+                color transparent
+            &::-webkit-input-placeholder
+                color transparent
+
+#button_search
+    display none
+    visibility hidden
+
+#results
+    width 100%
+    right .5rem
+    a 
+        padding 6px .5rem
+        // height 60px
+        min-height 60px
+        font-size .9rem
+        display block
+        cursor  pointer
+        // line-height 2
+        border-bottom 1px solid rgba(69,85,102,.41)
+        &:hover
+            background-color rgba(69,85,102,.41)
+            
+        // &:first-child
+        //   background-color white
+        // &:nth-child(3n+3)
+        //   background #ff0000
+        // &:nth-child(0)
+        //     opacity 1
+        &:nth-child(1)
+            opacity 1
+        &:nth-child(2) 
+            opacity .9
+        &:nth-child(3) 
+            opacity .8
+        &:nth-child(4) 
+            opacity .7
+        &:nth-child(5) 
+            opacity .6
+        img
+            width 48px
+            height 48px
+            
+#results a img{
+    float left
+    margin-right .5rem
+    vertical-align middle
+ 
+}
