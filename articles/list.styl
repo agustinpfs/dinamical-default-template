@@ -1,0 +1,103 @@
+@import './adminList.styl'
+
+.content-list
+    position absolute
+    top 0
+    // padding-top 48px
+    width 100%
+    height 100%
+    overflow-y scroll
+    -webkit-overflow-scrolling touch
+    .noposts
+        color #9b9b9b
+        padding: 1rem
+.viewed
+    opacity .9
+.Item
+    width 320px // 250px
+    min-width 320px // 250px
+    height 240px // 250px
+    margin-top .5rem
+    margin-left .5rem
+    position relative
+    display inline-block
+    color #ddd
+    background-color #242e38
+    &-image
+        width 100%
+        height 100%  
+    &-content
+        background rgba(2, 20, 29, 0.7)
+        position absolute
+        top 0        
+        width 100%
+        height 100%
+        padding 1rem
+        &:hover
+            background rgba(0, 0, 0, 0.8)   
+                    
+    &-title
+        width calc(100% - 60px)           
+        color #81D1F4
+        display inline-block
+        border-radius 0 10px 
+        // font-family 'latosemibold'
+        &:hover
+            color #ddd                
+    &-authorImage
+        height 40px
+        width 40px
+        padding 2px
+        background silver
+        border-radius 50%
+        float right
+        opacity .8
+        &:hover
+            opacity 1
+    &-tags
+        display block
+        color silver
+        &:hover
+            color #BBE4F2 
+
+/* Pagination */
+
+.page_navigation
+    position relative
+    top calc(100% - 48px)
+    text-align center
+    height 48px
+    background rgba(49, 61, 74, 0.64)
+    font-family 'Material-Design-Iconic-Font'
+    z-index 1
+    
+    a
+        margin 0 .5rem
+        color silver
+        text-decoration none
+        &:hover
+            color white !important
+        
+    .active_page
+        background #81D1F4
+        color #757D85 !important
+        border-radius 50%
+        &:hover
+            color #fff
+            
+
+    .page_link
+        position relative
+        top .5rem
+        vertical-align middle
+        padding 5px .5rem
+        
+.special-tag
+    color #03F419
+    // font-size 28px
+    left 100px
+    position absolute
+
+@media screen and (max-width: 600px)
+    .Item
+        width calc(100% - 1rem)

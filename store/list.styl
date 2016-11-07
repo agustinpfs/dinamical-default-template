@@ -1,0 +1,24 @@
+.Item
+    &-addToCart,
+    &-cost
+        color #eee
+        padding .8rem
+        bottom 0
+        position absolute
+        // font-family 'latosemibold'
+    &-addToCart
+        background-color #466A91
+        right 0
+        min-width 35%
+        text-align center
+        cursor pointer
+        &:hover
+            color #fff
+            background-color #4E92DF
+    &-cost
+        width calc(100% - 35%)
+        left 0
+        padding .8rem 1rem
+        background-color rgba(255, 255, 255, 0.1)
+        &::after
+            content " €"
